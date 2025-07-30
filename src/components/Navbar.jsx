@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpeg";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
 
@@ -61,7 +61,7 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("email");
     dispatch(logout());
-    navigate("/");
+    navigate("/hero");
   };
 
   const toggleNavbar = () => setIsOpen(!isOpen);
@@ -116,7 +116,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <Link to="/" className="text-lg font-semibold text-sky-700 flex items-center gap-x-2">
           <img src={logo} alt="Logo" className="w-6 h-16 object-contain" />
-          TechDreamity
+          TechDremity
         </Link>
       </div>
 
