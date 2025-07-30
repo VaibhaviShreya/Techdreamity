@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.jpg";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
 
