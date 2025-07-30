@@ -10,7 +10,7 @@ const cors = require("cors");
 
 // CORS configuration
 app.use(cors({
-  origin: "https://techdreamity.vercel.app/",
+  origin: "https://techdreamity.vercel.app",
   credentials: true
 }));
 
