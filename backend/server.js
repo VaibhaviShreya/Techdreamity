@@ -34,26 +34,28 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
   });
 
   const mailOptions = {
-    from: `"${name}" <${email}>`,
-    to: process.env.SMTP_TO,
-    subject: `Contact Form: ${service || name}`, // Use service if available
-    text: `
+  from: process.env.SMTP_USER,               
+  to: process.env.SMTP_TO,                   
+  replyTo: `"${name}" <${email}>`,         
+  subject: `Contact Form: ${service || name}`,
+  text: `
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
 Program: ${program}
 Service: ${service || 'Not specified'}
 Message: ${message}
-    `,
-    attachments: file
-      ? [
-          {
-            filename: file.originalname,
-            content: file.buffer,
-          },
-        ]
-      : [],
-  };
+  `,
+  attachments: file
+    ? [
+        {
+          filename: file.originalname,
+          content: file.buffer,
+        },
+      ]
+    : [],
+};
+
 
   try {
     await transporter.sendMail(mailOptions);
