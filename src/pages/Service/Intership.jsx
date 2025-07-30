@@ -68,8 +68,7 @@ const InternshipPage = () => {
 
   const handleApply = () => {
     window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLScCn4Pbhy--qGk-SG696xsgwe3hoV66kB_rGcX-07tuLivaSg/viewform',
-      '_blank'
+      'https://docs.google.com/forms/d/e/1FAIpQLSfHFFMvhVrt9FVZKiSO23f-vQ9ZfMGtZf49VSO2PtLgCwAf9Q/viewform?usp=sharing&ouid=106162453872637721865_blank'
     );
   };
 
