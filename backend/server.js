@@ -23,7 +23,7 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
   const { name, email, phone, program, service, message } = req.body;
   const file = req.file;
 
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: 587,
     secure: false,
