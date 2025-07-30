@@ -11,12 +11,12 @@ const Footer = () => {
         {/* Branding: Logo and Company Name */}
         <div className="flex items-center gap-2">
          
-          <span className="text-lg font-semibold text-sky-700">TechDreamity</span>
+          <span className="text-lg font-semibold text-sky-700">TechDremity</span>
         </div>
 
         {/* Copyright */}
         <div className="text-sm text-center md:text-right">
-          &copy; {currentYear} TechDreamity. All rights reserved.
+          &copy; {currentYear} TechDremity. All rights reserved.
         </div>
       </div>
     </footer>
