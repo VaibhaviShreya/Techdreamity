@@ -21,7 +21,7 @@ const Contact = () => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/send-email", {
+    const response = await fetch("https://techdreamity.onrender.com/send-email", {
       method: "POST",
       body: formData,
     });
