@@ -22,7 +22,7 @@ const Register = () => {
 
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', {
+      const res = await axios.post('https://techdreamity.onrender.com/api/auth/register', {
         email,
         password
       });
@@ -61,7 +61,7 @@ const Register = () => {
       const decoded = jwtDecode(credentialResponse.credential);
       console.log('Decoded Google user:', decoded);
 
-      const res = await axios.post('http://localhost:5000/api/auth/google-login', {
+      const res = await axios.post('https://techdreamity.onrender.com/api/auth/google-login', {
         token: credentialResponse.credential,
       });
 
