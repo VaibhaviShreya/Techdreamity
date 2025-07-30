@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronDown, ChevronRight, Clock, Users, Star, Award, Play, BookOpen } from 'lucide-react';
-// import {coursesData} from "./cousredata"
+import {coursesData} from "./cousredata"
 import { AiFillMail } from 'react-icons/ai';
 
 const SubTopicDropdown = ({ title, topics, isOpen, onToggle }) => {
