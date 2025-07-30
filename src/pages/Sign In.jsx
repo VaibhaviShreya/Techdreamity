@@ -32,7 +32,7 @@ const Login = () => {
     setMessage('');
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://techdreamity.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -85,7 +85,7 @@ const Login = () => {
       console.log("Google User Info:", decoded);
 
       // Send token to backend for verification and authentication
-      const res = await fetch('http://localhost:5000/api/auth/google-login', {
+      const res = await fetch('https://techdreamity.onrender.com/api/auth/google-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token: credentialResponse.credential })
