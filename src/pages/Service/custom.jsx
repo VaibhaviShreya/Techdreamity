@@ -85,7 +85,7 @@ const CustomProjectPage = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-sky-50 to-blue-50 min-h-screen">
+    <div className="bg-gradient-to-br from-sky-50 to-blue-50 min-h-screen  py-16 px-4">
       {/* Header */}
       <div className="bg-sky-600 text-white py-16">
         <div className="max-w-6xl mx-auto px-6">
