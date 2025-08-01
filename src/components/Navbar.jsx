@@ -61,7 +61,7 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("email");
     dispatch(logout());
-    navigate("/hero");
+    navigate("/");
   };
 
   const toggleNavbar = () => setIsOpen(!isOpen);
