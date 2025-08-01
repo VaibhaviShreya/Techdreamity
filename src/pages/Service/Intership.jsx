@@ -90,7 +90,7 @@ const InternshipPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-indigo-50  py-16 px-4">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-sky-600 via-sky-700 to-indigo-700 text-white py-20 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
